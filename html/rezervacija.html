@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Workers' salaries</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/rezervacija.css">
+
+</head>
+
+<body>
+
+
+  <div class=container-fluid>
+    <a href='../index.html'>
+      <button type="button" class="btn btn-primary">Početak</button></a>
+  </div>
+
+
+
+  <div class="container naslov">
+    <p>Postovani,
+      popunite nasu formu i zakazite let, ili se prijavite email-om na nas newsletter i budite u toku sa popistima i
+      akcijama!</p>
+
+
+  </div>
+
+  <div class="container">
+
+    <!-- newsletter -->
+    <fieldset class="form-group">
+      <p class="naslov">Prijavite se za newsletter putem emaila:</p>
+
+      <input type="text" id="emailLoc" class="form-control" />
+      <input type="button" value="Prijava" class="btn btn-success dugme" onclick="potvrdi()">
+    </fieldset>
+
+
+  </div>
+
+
+  <br>
+  <br>
+
+
+  <div class="container naslov">
+    <p>Rezervacija leta:</p>
+
+
+  </div>
+  <div class="container formica">
+    <!-- IME -->
+    <form>
+      <fieldset class="form-group">
+        Ime: <input type="text" id="firstName" class="form-control" />
+      </fieldset>
+
+      <!-- PREZIME -->
+      <fieldset class="form-group">
+        Prezime: <input type="text" id="surname" class="form-control" />
+      </fieldset>
+
+      <!-- BROJ GODINA -->
+      <fieldset class="form-group">
+        Koliiko imate godina:
+        <input type="text" id="wyears" class="form-control" />
+      </fieldset>
+
+      <!-- EMAIL ADRESA -->
+      <fieldset class="form-group">
+        Vaša email adresa:
+        <input type="text" id="email" class="form-control" />
+      </fieldset>
+
+      <!-- BIRANJE UZLETISTA -->
+      <fieldset class="form-group">
+        izaberite mesto poletanja:
+        <select id="uzletiste" class="form-control">
+          <option value="stolovi">Stolovi</option>
+          <option value="kopaonik">Kopaonik</option>
+          <option value="zlatibor">Zlatibor</option>
+        </select>
+      </fieldset>
+
+      <!-- BIRANJE TRAJANJA LETA -->
+      <fieldset class="form-group">
+        izaberite okvirno trajanje leta:
+        <select id="duzinaLeta" class="form-control">
+          <option value="15min">15 min</option>
+          <option value="30min">30 min</option>
+          <option value="1h">1 h</option>
+        </select>
+      </fieldset>
+
+      <!-- USB SA SNIMKOM LETA -->
+      <fieldset class="form-group">
+        Da li zelite USB sa snimkom leta?:
+        <select id="usb" class="form-control">
+          <option value="ne">NE</option>
+          <option value="da">DA</option>
+        </select>
+      </fieldset>
+
+      <!-- ZAKAZIVANJE - DUGME -->
+      <input type="button" id="zakazite" value="Zakažite" class="btn btn-success" />
+
+      <!-- POGLEDAJTE REZERVACIJU -->
+      <input type="button" id="showWorkersBtn" value="Pogledajte rezervaciju" class="btn btn-warning" />
+    </form>
+    <div id="workers"></div>
+  </div>
+
+  <script src="../js/rezervacija.js"></script>
+</body>
+
+</html>
