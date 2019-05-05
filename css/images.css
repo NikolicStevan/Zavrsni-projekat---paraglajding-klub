@@ -14,6 +14,7 @@
     margin: auto;
     border: #fff solid 3px;
     background: #fff;
+   
   }
   
   .main-img img,
@@ -48,4 +49,11 @@
     .imgs {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  #current {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
   }
