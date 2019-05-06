@@ -38,16 +38,11 @@
       var surname = $("#surname").val();
       var brojGodina = $("#wyears").val();
       var email = $("#email").val();
-      if (!isValid(firstName, surname, brojGodina, email)) {
-        alert(
-          "Poštovani " +
-          firstName +
-          " " +
-          surname +
-          " nije uspešna rezervacija, vaš unos je pogrešan!"
-        );
+      if (!isValid(firstName, surname, brojGodina, email)) {	
         return;
-      }
+      } else {
+		  $("#myModal1").modal();
+	  }
 
       var fullName = surname + " " + firstName;
       var godineStarosti = parseInt(brojGodina);
@@ -140,10 +135,12 @@
         wYears.length == 0 ||
         email.length == 0
       ) {
+		  $("#myModalZvezda").modal();
         return false;
       }
       var n = parseInt(wYears);
       if (isNaN(n) || n < 0) {
+		  $("#myModalBroj").modal();
         return false;
       }
       return true;
