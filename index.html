@@ -758,30 +758,60 @@
 
             <div class="container">
 
-                <form>
+               <form>
 
                     <div class="row">
 
                         <div class="col-md-4">
 
-                            <input type="text" class="form-control" id="name" placeholder="Vaše ime">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            <input type="text" class="form-control" id="subject" placeholder="Naslov">
+                            <input type="text" onfocus="this.value=''" class="form-control" id="name"
+                                placeholder="Vaše ime">
+                            <input type="email" onfocus="this.value=''" class="form-control" id="email"
+                                placeholder="Email">
+                            <input type="text" onfocus="this.value=''" class="form-control" id="subject"
+                                placeholder="Naslov">
 
                         </div>
 
                         <div class="col-md-8">
 
-                            <textarea class="form-control" id="message" rows="25" cols="10"
+                            <textarea class="form-control" onfocus="this.value=''" id="message" rows="25" cols="10"
                                 placeholder="Tekst poruke...."></textarea>
 
-                            <button type="button" class="btn btn-default submit-btn form_submit">POŠALJI</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">Posalji</button>
 
+
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-center">Uspesno ste poslali poruku</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body text-center">
+                                            Uskoro cemo vas kontaktirati
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-
-
                 </form>
 
 
@@ -789,6 +819,10 @@
 
 
         </div>
+		
+		
+		
+		
 
         <div class="container">
             <div class="row">
