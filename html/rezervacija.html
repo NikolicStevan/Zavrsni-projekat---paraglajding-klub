@@ -27,8 +27,8 @@
 
 
   <div class="container naslov">
-    <p>Postovani,
-      popunite nasu formu i zakazite let, ili se prijavite email-om na nas newsletter i budite u toku sa popistima i
+    <p>Poštovani,
+      popunite našu formu i zakažite let, ili se prijavite email-om na naš newsletter i budite u toku sa popustima i
       akcijama!</p>
 
 
@@ -38,7 +38,7 @@
 
     <!-- newsletter -->
     <fieldset class="form-group">
-      <p class="naslov">Prijavite se za newsletter putem emaila:</p>
+      <p class="naslov">Prijavite se za newsletter putem email-a:</p>
 
       <input type="text" id="emailLoc" class="form-control" />
       <input type="button" value="Prijava" class="btn btn-success dugme" onclick="potvrdi()">
@@ -83,7 +83,7 @@
 
       <!-- BIRANJE UZLETISTA -->
       <fieldset class="form-group">
-        izaberite mesto poletanja:
+        Izaberite mesto poletanja:
         <select id="uzletiste" class="form-control">
           <option value="stolovi">Stolovi</option>
           <option value="kopaonik">Kopaonik</option>
@@ -93,7 +93,7 @@
 
       <!-- BIRANJE TRAJANJA LETA -->
       <fieldset class="form-group">
-        izaberite okvirno trajanje leta:
+        Izaberite okvirno trajanje leta:
         <select id="duzinaLeta" class="form-control">
           <option value="15min">15 min</option>
           <option value="30min">30 min</option>
@@ -113,10 +113,126 @@
       <!-- ZAKAZIVANJE - DUGME -->
       <input type="button" id="zakazite" value="Zakažite" class="btn btn-success" />
 
+
+
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Poštovani, uspešno ste zakazali let! Sada možete pogledati vašu
+                rezervaciju</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              Uskoro ćemo vas kontaktirati.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+	  
+	  
+	  
       <!-- POGLEDAJTE REZERVACIJU -->
       <input type="button" id="showWorkersBtn" value="Pogledajte rezervaciju" class="btn btn-warning" />
     </form>
     <div id="workers"></div>
+  </div>
+  
+  
+  
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalLoc1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title text-center">Uspešno ste se upisali u našu bazu!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+         Očekujte najnovije ponude u vašem inbox-u!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalLoc2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Već ste prijavljeni</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+  
+          <!-- Modal body -->
+          <div class="modal-body text-center">
+            Uskoro ćemo vas kontaktirati.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+  
+  
+  
+        </div>
+  
+      </div>
+    </div>
+
+
+
+      <!-- The Modal -->
+  <div class="modal fade" id="myModalLoc3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title text-center">Već ste prijavljeni sa drugim email-om</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          Uskoro ćemo vas kontaktirati.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+
+
+      </div>
+
+    </div>
   </div>
 
   <script src="../js/rezervacija.js"></script>

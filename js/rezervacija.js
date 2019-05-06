@@ -66,13 +66,7 @@
         tandem: tandem,
         email: email
       });
-      alert(
-        "Postovani " +
-        firstName +
-        " " +
-        surname +
-        " dodati ste na rezervaciju"
-      );
+   
     });
 
     //ova f-ja samo ispisuje rezervaciju
@@ -165,11 +159,11 @@
 
     if (localStorage.getItem('emailLoc') === null) {
       localStorage.setItem('emailLoc', ste);
-      alert('Uspesno ste se upisali u bazu')
+       $("#myModalLoc1").modal();
     } else if (ste === localStorage.emailLoc) {
-      alert('Vec ste prijavljeni');
+       $("#myModalLoc2").modal();
     } else {
-      alert('Vec ste se prijavili sa drugim emailom');
+       $("#myModalLoc3").modal();
 
     }
   }
