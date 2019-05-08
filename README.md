@@ -18,6 +18,17 @@ What things you need to install the software and how to install them
 start by index.html in your web browser
 ```
 
+
+### Page structure
+
+```
+Pocetna
+    Galerija slika
+    Video galerija
+    Rezervacija
+```
+
+
 ### Installing
 
 nothing is necessary to install
